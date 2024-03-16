@@ -23,16 +23,23 @@ export default function Header() {
                   )}
                 </Disclosure.Button>
               </div>
+              
+              {/* Logo and title */}
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center text-white font-semibold text-2xl">
                   <p>Minipay</p>
-                  <ShoppingCartIcon className="h-8 w-8 mr-2" />
                 </div>
+                {/* Navigation links */}
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  <a className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900">
+                  <a href="#" className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900">
                     Home
                   </a>
                 </div>
+              </div>
+
+              {/* Shopping Cart Icon on the right */}
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <ShoppingCartIcon className="h-8 w-8 text-black" />
               </div>
             </div>
           </div>
