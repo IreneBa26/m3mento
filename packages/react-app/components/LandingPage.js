@@ -8,7 +8,6 @@ import getRandomImage from "../utils/getRandomImage";
 
 export default function LandingPage() {
   const [data, setData] = useState([]);
-  const [basketItems, setBasketItems] = useState([]);
 
   // Function to add an item to the basket
   const addToBasket = () => {
@@ -37,8 +36,8 @@ export default function LandingPage() {
             },
           }
         );
-        console.log("Bearer " + process.env.BEARER_TOKEN);
         const result = await response.json();
+        console.log(result.data)
         setData(result.data); // Update data state with the fetched array object
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -47,10 +46,7 @@ export default function LandingPage() {
 
     fetchData();
 
-    
-    return () => {
-     
-    };
+    return () => {};
   }, []);
 
   return (
@@ -63,10 +59,11 @@ export default function LandingPage() {
               className="group relative max-w-sm rounded overflow-hidden shadow-lg"
             >
               <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
-                <img
+                {/* <img
                   src="https://github.com/amoweolubusayo/RSVP-composer/assets/20168921/da44a639-b4c2-430b-9c84-362b49e601d5"
                   alt="backup"
-                />
+                /> */}
+                 <img src={getRandomImage()} alt={getRandomImage()} />
               </div>
               <div className="mt-4 flex justify-between pl-4">
                 <div>
@@ -76,8 +73,8 @@ export default function LandingPage() {
                   <b>
                     {" "}
                     <p className="mt-2 text-sm text-gray-500">
-                      Price: {item.defaultPrice.unitAmount / 10000000}
-                      {item.defaultPrice.currency}
+                      Price: 1
+                     
                     </p>
                   </b>
                 </div>
