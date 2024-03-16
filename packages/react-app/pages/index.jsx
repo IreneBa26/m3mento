@@ -2,75 +2,71 @@ import PrimaryButton from "@/components/Button";
 import { useWeb3 } from "@/contexts/useWeb3";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import LandingPage from "../components/LandingPage";
 
 export default function Home() {
-    const {
-        address,
-        getUserAddress,
-        sendCUSD,
-        mintMinipayNFT,
-        getNFTs,
-        signTransaction,
-    } = useWeb3();
-    const [cUSDLoading, setCUSDLoading] = useState(false);
-    const [nftLoading, setNFTLoading] = useState(false);
-    const [signingLoading, setSigningLoading] = useState(false);
-    const [userOwnedNFTs, setUserOwnedNFTs] = useState<string[]>([]);
-    const [tx, setTx] = useState<any>(undefined);
+  // const {
+  //   address,
+  //   getUserAddress,
+  //   sendCUSD,
+  //   mintMinipayNFT,
+  //   getNFTs,
+  //   signTransaction,
+  // } = useWeb3();
+  // const [cUSDLoading, setCUSDLoading] = useState(false);
+  // const [nftLoading, setNFTLoading] = useState(false);
+  // const [signingLoading, setSigningLoading] = useState(false);
+  // const [userOwnedNFTs, setUserOwnedNFTs] = useState([]);
+  // const [tx, setTx] = useState<any>(undefined);
 
-    useEffect(() => {
-        getUserAddress().then(async () => {
-            const tokenURIs = await getNFTs();
-            setUserOwnedNFTs(tokenURIs);
-        });
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
 
-    async function sendingCUSD() {
-        if (address) {
-            setSigningLoading(true);
-            try {
-                const tx = await sendCUSD(address, "0.1");
-                setTx(tx);
-            } catch (error) {
-                console.log(error);
-            } finally {
-                setSigningLoading(false);
-            }
-        }
-    }
 
-    async function signMessage() {
-        setCUSDLoading(true);
-        try {
-            await signTransaction();
-        } catch (error) {
-            console.log(error);
-        } finally {
-            setCUSDLoading(false);
-        }
-    }
+  // async function sendingCUSD() {
+  //   if (address) {
+  //     setSigningLoading(true);
+  //     try {
+  //       const tx = await sendCUSD(address, "0.1");
+  //       setTx(tx);
+  //     } catch (error) {
+  //       console.log(error);
+  //     } finally {
+  //       setSigningLoading(false);
+  //     }
+  //   }
+  // }
 
-    async function mintNFT() {
-        setNFTLoading(true);
-        try {
-            const tx = await mintMinipayNFT();
-            const tokenURIs = await getNFTs();
-            setUserOwnedNFTs(tokenURIs);
-            setTx(tx);
-        } catch (error) {
-            console.log(error);
-        } finally {
-            setNFTLoading(false);
-        }
-    }
+  // async function signMessage() {
+  //   setCUSDLoading(true);
+  //   try {
+  //     await signTransaction();
+  //   } catch (error) {
+  //     console.log(error);
+  //   } finally {
+  //     setCUSDLoading(false);
+  //   }
+  // }
 
-    return (
-        <div className="flex flex-col justify-center items-center">
-            <div className="h1">
-                There you go... a canvas for your next Minipay project!
-            </div>
-            {address && (
+  // async function mintNFT() {
+  //   setNFTLoading(true);
+  //   try {
+  //     const tx = await mintMinipayNFT();
+  //     const tokenURIs = await getNFTs();
+  //     setUserOwnedNFTs(tokenURIs);
+  //     setTx(tx);
+  //   } catch (error) {
+  //     console.log(error);
+  //   } finally {
+  //     setNFTLoading(false);
+  //   }
+  // }
+
+  return (
+    <div className="flex flex-col justify-center items-center">
+      <div className="h1">
+        There you go... a canvas for your next Minipay project!
+      </div>
+      <LandingPage />
+      {/* {address && (
                 <>
                     <div className="h2 text-center">
                         Your address:{" "}
@@ -137,7 +133,8 @@ export default function Home() {
                         />
                     </div>
                 </>
-            )}
-        </div>
-    );
+            )} */}
+    </div>
+  );
 }
+

@@ -23,8 +23,16 @@
     "paths": {
       "@/*": ["*"],
       "@local-contracts/*": ["../hardhat/*"]
-    },
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/Card.js",
+    "components/LandingPage.js",
+    "pages/index.jsx"
+, "components/Footer.js", "components/Header.tsx", "components/Layout.tsx"  ],
   "exclude": ["node_modules"]
 }
