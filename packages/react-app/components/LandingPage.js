@@ -72,10 +72,7 @@ export default function LandingPage() {
                   </h3>
                   <b>
                     {" "}
-                    <p className="mt-2 text-sm text-gray-500">
-                      Price: {item.defaultPrice.unitAmount}
-                      {item.defaultPrice.currency}
-                    </p>
+                    <p className="mt-2 text-sm text-gray-500">Price: 1</p>
                   </b>
                 </div>
               </div>
