@@ -27,7 +27,7 @@ export default function LandingPage() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://api.copperx.dev/api/v1/products",
+          "https://api.copperx.dev/api/v1/products?limit=20",
           {
             headers: {
               accept: "application/json",
@@ -37,7 +37,7 @@ export default function LandingPage() {
           }
         );
         const result = await response.json();
-        console.log(result.data)
+        console.log(result.data);
         setData(result.data); // Update data state with the fetched array object
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -63,7 +63,7 @@ export default function LandingPage() {
                   src="https://github.com/amoweolubusayo/RSVP-composer/assets/20168921/da44a639-b4c2-430b-9c84-362b49e601d5"
                   alt="backup"
                 /> */}
-                 <img src={getRandomImage()} alt={getRandomImage()} />
+                <img src={getRandomImage()} alt={getRandomImage()} />
               </div>
               <div className="mt-4 flex justify-between pl-4">
                 <div>
@@ -73,8 +73,8 @@ export default function LandingPage() {
                   <b>
                     {" "}
                     <p className="mt-2 text-sm text-gray-500">
-                      Price: 1
-                     
+                      Price: {item.defaultPrice.unitAmount}
+                      {item.defaultPrice.currency}
                     </p>
                   </b>
                 </div>
