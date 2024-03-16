@@ -27,7 +27,7 @@ export default function LandingPage() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://api.copperx.dev/api/v1/products?limit=20",
+          "https://api.copperx.dev/api/v1/products?limit=50",
           {
             headers: {
               accept: "application/json",
