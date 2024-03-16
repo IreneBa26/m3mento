@@ -3,8 +3,12 @@ import { useWeb3 } from "@/contexts/useWeb3";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import LandingPage from "../components/LandingPage";
+import { fetchProducts } from "../pages/api/products";
+import axios from "axios";
 
 export default function Home() {
+  const [products, setProducts] = useState([]);
+
   // const {
   //   address,
   //   getUserAddress,
@@ -18,8 +22,6 @@ export default function Home() {
   // const [signingLoading, setSigningLoading] = useState(false);
   // const [userOwnedNFTs, setUserOwnedNFTs] = useState([]);
   // const [tx, setTx] = useState<any>(undefined);
-
-
 
   // async function sendingCUSD() {
   //   if (address) {
@@ -59,13 +61,40 @@ export default function Home() {
   //     setNFTLoading(false);
   //   }
   // }
+  /* The `useEffect` hook in the provided code snippet is making an HTTP GET request to fetch products
+  data from the specified API endpoint. Here's a breakdown of what it's doing: */
+  // useEffect(() => {
+  //   const options = {
+  //     method: "GET",
+  //     url: "https://api.copperx.dev/api/v1/products",
+  //     headers: {
+  //       accept: "application/json",
+  //       authorization:
+  //         "Bearer pav1_QKCutuiqdIZ4HnehWIuereXSLyTdz7KG1yyr3gsShk8sy7veFOEtobc5vt9fBH65",
+  //     },
+  //   };
+
+  //   axios
+  //     .request(options)
+  //     .then(function (response) {
+  //       setProducts(response.data.data);
+  //       console.log("got here", response.data.data);
+  //       // console.log("products are", products);
+  //     })
+  //     .catch(function (error) {
+  //       console.error(error);
+  //     });
+  // }, [products]); // Empty dependency array ensures this effect runs once on mount
 
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="h1">
-        There you go... a canvas for your next Minipay project!
+        {/* {products.map((product) => (
+          <div key={product.id} name={product.name}></div>
+        ))} */}
+        <LandingPage />
       </div>
-      <LandingPage />
+
       {/* {address && (
                 <>
                     <div className="h2 text-center">
@@ -137,4 +166,3 @@ export default function Home() {
     </div>
   );
 }
-
