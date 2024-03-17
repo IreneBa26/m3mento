@@ -7,7 +7,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## About Us
 
 m3mento is a decentralized marketplace using Celo and Nouns to facilitate the purchase of feminine health products and beyond, emphasizing kindness and blockchain-powered generosity.
 
@@ -26,12 +26,7 @@ m3mento is built for MiniPay using Celo Composer and the following front-end fra
 
 <!-- GETTING STARTED -->
 
-## Prerequisites
-
-- Node
-- Git (v2.38 or higher)
-
-## Why use m3mento
+## Value Proposition & Purpose
 
 The easiest way to start with Celo Composer is using `@celo/celo-composer`. This CLI tool lets you quickly start building dApps on Celo for multiple frameworks, including React (with either react-celo or rainbowkit-celo), React Native (w/o Expo), Flutter, and Angular. To get started, just run the following command, and follow the steps:
 
@@ -48,6 +43,8 @@ See the [open issues](https://github.com/celo-org/celo-composer/issues) for a fu
 ## Contributing
 
 We welcome contributions from the community.
+
+## Meet the Team
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
