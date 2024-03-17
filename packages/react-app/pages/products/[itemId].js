@@ -40,14 +40,24 @@ export default function ProductDetails() {
 
   return (
     <div>
-      <img src={product.publicImages[0]} alt={getRandomImage()} />
+     <img src={getRandomImage()} alt={getRandomImage()} />
+      // <img src={product.publicImages[0]} alt={getRandomImage()} />
       <h1>{product.name}</h1>
       <p>
         Price:
-        {product.defaultPrice.unitAmount / 100000000}
-        {product.defaultPrice.currency}
+{product.defaultPriceId === null
+                        ? 1
+                        : product.defaultPrice.unitAmount/100000000}
+        // {product.defaultPrice.unitAmount / 100000000}
+{product.defaultPriceId === null
+                        ? "usdt"
+                        : product.defaultPrice.currency}
+        // {product.defaultPrice.currency}
       </p>
-      <p>Description: {product.description}</p>
+        
+      <p>Description: {product.defaultPriceId === null
+                        ? "no desc"
+                        : product.description} </p>
 
       {/* Render other details of the product */}
     </div>
