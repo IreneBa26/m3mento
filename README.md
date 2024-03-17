@@ -30,27 +30,30 @@ m3mento is built for MiniPay using Celo Composer and the following front-end fra
 
 <!-- GETTING STARTED -->
 
+## Tech Stack
+
+m3mento's tech stack is carefully chosen to support our vision:
+
+- Frontend: React.js for dynamic, intuitive user interfaces.
+- Blockchain: Celo for fast, efficient, and eco-friendly transactions.
+- Payments: Copperx API integration for seamless crypto payments.
+- Assets: Nouns for community-loved visuals and branding.
+
 ## Value Proposition & Purpose
 
 Building a digital, consumer-focused economy that's inclusive, facilitating easy access to feminine health products and beyond. Kindness and generosity are just a click away.
 
-<!-- ROADMAP -->
+## Why m3mento?
 
-## Roadmap
-
-See the [open issues](https://github.com/celo-org/celo-composer/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+m3mento is more than a marketplace; it's a movement. By combining cutting-edge blockchain technology with a focus on community and accessibility, we're setting a new standard for how we think about and act upon social issues like period poverty.
 
 <!-- CONTRIBUTING -->
 
 ## Contributing
 
-We welcome contributions from the community.
+Join us in our mission! Whether you're a developer, designer, health expert, or just passionate about making a difference, we welcome your contributions. Let's build a kinder, healthier world together.
 
 ## Meet the Team
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 @amoweolubusayo ⭐️
 
@@ -65,11 +68,5 @@ We welcome contributions from the community.
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<!-- CONTACT -->
-## Contact
-
-- [@CeloDevs](https://twitter.com/CeloDevs)
-- [Discord](https://discord.com/invite/celo)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
