@@ -3,12 +3,15 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import getRandomImage from "../../utils/getRandomImage";
 
+
 export default function ProductDetails() {
   const router = useRouter();
   const { itemId } = router.query;
   const [product, setProduct] = useState(null);
   const [productId, setProductId] = useState(null);
   const [productName, setProductName] = useState(null);
+  const [paymentLink, setPaymentLink] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -43,6 +46,7 @@ export default function ProductDetails() {
   }
 
   const handleButtonClick = async () => {
+    setIsLoading(true); // Set loading state to true when button is clicked
     const options = {
       method: "POST",
       headers: {
@@ -84,9 +88,19 @@ export default function ProductDetails() {
         throw new Error("Network response was not ok");
       }
       const data = await response.json();
+      if (data.id) {
+        // Construct the payment link
+        const link = `https://buy.copperx.dev/payment/payment-link/${data.id}`;
+        // Set the payment link state
+        setPaymentLink(link);
+      } else {
+        console.error('No id found in response');
+      }
       console.log(data);
     } catch (error) {
       console.error("Error creating payment link:", error);
+    }finally {
+      setIsLoading(false); // Set loading state to false after handling click event
     }
   };
   return (
@@ -116,11 +130,18 @@ export default function ProductDetails() {
       </p>
 
       {/* Render other details of the product */}
-      <button
+      <button className="btn btn-small"
         onClick={() => handleButtonClick(product.id, product.name)}
       >
+         {isLoading ? 'Generating...' : 'Generate Payment Link'}
         Create Payment Link
       </button>
+      {paymentLink && !isLoading && (
+        <div>
+          <p>Payment Link:</p>
+          <a href={paymentLink} target="_blank" rel="noopener noreferrer">{paymentLink}</a>
+        </div>
+      )}
     </div>
   );
 }
