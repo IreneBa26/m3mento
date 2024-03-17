@@ -58,10 +58,14 @@ export default function LandingPage() {
               key={index}
               className="group relative max-w-sm rounded overflow-hidden shadow-lg"
             >
-            <Link href={`/products/${item.id}`}>
-              <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
-                <img src={getRandomImage()} alt={getRandomImage()} />
-              </div>
+              <Link href={`/products/${item.id}`}>
+                <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                  {item.defaultPriceId === null ? (
+                    <img src={getRandomImage()} alt={getRandomImage()} />
+                  ) : (
+                    <img src={item.publicImages[0]} alt={getRandomImage()} />
+                  )}
+                </div>
               </Link>
               <div className="mt-4 flex justify-between pl-4">
                 <div>
@@ -74,7 +78,7 @@ export default function LandingPage() {
                       Price:{" "}
                       {item.defaultPriceId === null
                         ? 1
-                        : item.defaultPrice.unitAmount/100000000}
+                        : item.defaultPrice.unitAmount / 100000000}
                       {item.defaultPriceId === null
                         ? "usdc"
                         : item.defaultPrice.currency}
