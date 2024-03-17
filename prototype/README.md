@@ -1,5 +1,6 @@
 
-  # Proposal_ETHGlobal London - 1
+  # Proposal_ETHGlobal London
+  Made with Figma and Locofy Beta
 
   Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
 
