@@ -1,8 +1,9 @@
 <!-- TITLE -->
 <p align="center"> 
-  <img width="100px" src="https://github.com/IreneBa26/m3mento/blob/main/prototype/Nouns.gif" align="center" alt="m3mento" />
- <h1 align="center">m3mento</h1>
- <h3 align="center">Spread kindness. Make it crypto.</h3>
+  <img width="400px" src="https://github.com/IreneBa26/m3mento/blob/main/m3mento.png" align="center" alt="m3mento" />
+  <h1 align="center">m3mento</h1>
+  <h3 align="center">Spread kindness. Make it crypto.</h3>
+  <img width="400px" src="https://github.com/IreneBa26/m3mento/blob/main/prototype/Nouns.gif" align="center" alt="gif" />
 </p>
 
 <!-- ABOUT THE PROJECT -->
