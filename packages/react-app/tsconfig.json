@@ -33,7 +33,10 @@
     ".next/types/**/*.ts",
     "components/Card.js",
     "components/LandingPage.tsx",
-    "pages/index.jsx"
-, "components/Footer.js", "components/Header.tsx", "components/Layout.tsx"  ],
+    "pages/index.jsx",
+    "components/Footer.js",
+    "components/Header.tsx",
+    "components/Layout.tsx"
+  ],
   "exclude": ["node_modules"]
 }
