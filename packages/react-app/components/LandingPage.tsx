@@ -8,7 +8,7 @@ import getRandomImage from "../utils/getRandomImage";
 import { useRouter } from "next/router";
 
 export default function LandingPage() {
-  const [data, setData] = useState([]);
+  const [data, setData]: Array<any> = useState([]);
   const [shopItems, setShopItems]: Array<any> = useState([])
   // Get the router object
   const router = useRouter();
@@ -96,11 +96,13 @@ export default function LandingPage() {
           </button>
         </div>
         <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 clickable-card">
+         {/* @ts-ignore */}
           {data.map((item, index) => (
             <div
               key={index}
               className="group relative max-w-sm rounded overflow-hidden shadow-lg"
             >
+          
               <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
                 {/* <img
                  src="https://github.com/amoweolubusayo/RSVP-composer/assets/20168921/da44a639-b4c2-430b-9c84-362b49e601d5"
@@ -112,7 +114,7 @@ export default function LandingPage() {
                 <div>
                   <h3 className="text-bg font-weight-bold text-gray-900">
                     {item.name}
-                  </h3>
+                  </h3> 
                   <b>
                     {" "}
                     <p className="mt-2 text-sm text-gray-500">
@@ -128,11 +130,11 @@ export default function LandingPage() {
                 </div>
               </div>
               <div className="mt-4 flex flex-row justify-center items-center w-auto pl-4 inline-block bg-gray-200 rounded-full mt-2 px-3  text-sm font-semibold text-gray-700 mr-2 mb-2">
-                <button onClick={removeFromBasket} className="inline-block bg-gray-200 rounded-full mt-2 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <button onClick={()=>removeFromBasket(index)} className="inline-block bg-gray-200 rounded-full mt-2 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                   -
                 </button>
                 <p>{counter}</p>
-                <button onClick={addToBasket} className="inline-block bg-gray-200 rounded-full mt-2 px-3  text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <button onClick={()=>addToBasket(index)} className="inline-block bg-gray-200 rounded-full mt-2 px-3  text-sm font-semibold text-gray-700 mr-2 mb-2">
                   +
                 </button>
               </div>
