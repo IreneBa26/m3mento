@@ -15,6 +15,7 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
+    "noImplicitAny": false,
     "plugins": [
       {
         "name": "next"
@@ -31,7 +32,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/Card.js",
-    "components/LandingPage.js",
+    "components/LandingPage.tsx",
     "pages/index.jsx"
 , "components/Footer.js", "components/Header.tsx", "components/Layout.tsx"  ],
   "exclude": ["node_modules"]
