@@ -1,35 +1,9 @@
 <!-- TITLE -->
 <p align="center"> 
   <img width="100px" src="https://github.com/IreneBa26/m3mento/blob/main/m3mento.png" align="center" alt="m3mento" />
- <h2 align="center">m3mento</h2>
+ <h1 align="center">m3mento</h1>
  <p align="center">Spread kindness. Make it crypto.</p>
 </p>
-
-<!-- TABLE OF CONTENTS -->
-
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
 
 <!-- ABOUT THE PROJECT -->
 
@@ -41,7 +15,7 @@ m3mento is a decentralized marketplace using Celo and Nouns to facilitate the pu
 
 ## Built With
 
-m3mento is built for MiniPay using Celo Composer, with a variety of front-end frameworks and asset libraries.
+m3mento is built for MiniPay using Celo Composer and the following front-end frameworks and asset libraries:
 
 - [Celo](https://celo.org/)
 - [React.js](https://reactjs.org/)
