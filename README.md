@@ -1,6 +1,6 @@
 <!-- TITLE -->
 <p align="center"> 
-  <img width="400px" src="https://github.com/IreneBa26/m3mento/blob/main/m3mento.png" align="center" alt="m3mento" />
+  <img width="400px" src="https://github.com/IreneBa26/m3mento/blob/main/m3mento.png" align="center" alt="m3mento" /> 
 </p>
 <p>
   <h1 align="center">m3mento</h1><h3 align="center">Spread kindness. Make it crypto.</h3>
@@ -31,6 +31,7 @@ m3mento is built for MiniPay using Celo Composer and the following front-end fra
 <!-- GETTING STARTED -->
 
 ## Tech Stack
+<img width="400px" src="https://github.com/IreneBa26/m3mento/blob/main/prototype/Tech%20Stack.png" align="center" alt="tech" />
 
 m3mento's tech stack is carefully chosen to support our vision:
 
@@ -54,6 +55,7 @@ m3mento is more than a marketplace; it's a movement. By combining cutting-edge b
 Join us in our mission! Whether you're a developer, designer, health expert, or just passionate about making a difference, we welcome your contributions. Let's build a kinder, healthier world together.
 
 ## Meet the Team
+<img width="400px" src="https://github.com/IreneBa26/m3mento/blob/main/prototype/Meet%20the%20Team.png" align="center" alt="team" />
 
 @amoweolubusayo ⭐️
 
