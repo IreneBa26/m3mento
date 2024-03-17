@@ -58,13 +58,11 @@ export default function LandingPage() {
               key={index}
               className="group relative max-w-sm rounded overflow-hidden shadow-lg"
             >
+            <Link href={`/products/${item.id}`}>
               <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
-                {/* <img
-                  src="https://github.com/amoweolubusayo/RSVP-composer/assets/20168921/da44a639-b4c2-430b-9c84-362b49e601d5"
-                  alt="backup"
-                /> */}
                 <img src={getRandomImage()} alt={getRandomImage()} />
               </div>
+              </Link>
               <div className="mt-4 flex justify-between pl-4">
                 <div>
                   <h3 className="text-bg font-weight-bold text-gray-900">
