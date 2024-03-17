@@ -134,8 +134,8 @@ export default function ProductDetails() {
         onClick={() => handleButtonClick(product.id, product.name)}
         className={`bg-blue-500 text-white px-4 py-2 rounded ${isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600'}`}
       >
-         {isLoading ? 'Generating...' : 'Generate Payment Link'}
-        Create Payment Link
+         {isLoading ? 'Generating...' : 'Generate Payment Link by '}
+        Creating Payment Link
       </button>
       {paymentLink && !isLoading && (
         <div>
