@@ -37,9 +37,9 @@ m3mento's tech stack is carefully chosen to support our vision:
 
 - Frontend: React.js for dynamic, intuitive user interfaces.
 - Blockchain: Celo for fast, efficient, and eco-friendly transactions
-  
-  -   Contract with *USDC - cUSD* swap through Uniswap: https://explorer.celo.org/alfajores/address/0xa00b60f0bB0DcFC3c65dAd07C1678bbbf8745ED1 
-  -   Contract with *cUSD - cUSD* transaction: https://explorer.celo.org/alfajores/address/0x5BdE7e26aD539Ce9f525F1001Dae64caD93aBA2a/contracts#address-tabs
+
+  -   Light version: Contract with *cUSD - cUSD* transaction: https://explorer.celo.org/alfajores/address/0x5BdE7e26aD539Ce9f525F1001Dae64caD93aBA2a/contracts#address-tabs
+  -   Upgraded version: Contract with *USDC - cUSD* swap through Uniswap: https://explorer.celo.org/alfajores/address/0xa00b60f0bB0DcFC3c65dAd07C1678bbbf8745ED1 
     
 - Payments: Copperx API integration for seamless crypto payments.
 - Assets: Nouns for community-loved visuals and branding.
