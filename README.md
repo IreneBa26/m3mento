@@ -1,8 +1,11 @@
 <!-- TITLE -->
 <p align="center"> 
   <img width="400px" src="https://github.com/IreneBa26/m3mento/blob/main/m3mento.png" align="center" alt="m3mento" />
-  <h1 align="center">m3mento</h1>
-  <h3 align="center">Spread kindness. Make it crypto.</h3>
+</p>
+<p>
+  <h1 align="center">m3mento</h1><h3 align="center">Spread kindness. Make it crypto.</h3>
+</p>
+<p align="center">
   <img width="400px" src="https://github.com/IreneBa26/m3mento/blob/main/prototype/Nouns.gif" align="center" alt="gif" />
 </p>
 
@@ -20,8 +23,8 @@ m3mento is built for MiniPay using Celo Composer and the following front-end fra
 
 - [Celo](https://celo.org/), by deploying on the Celo Alfajores Testnet and demoing our DApp with MiniPay's Site Tester.
 - [Copperx](https://dashboard.copperx.dev/products?status=all), to simplify crypto payments and get multi-currency support.
-- [Nouns](https://nouns.wtf), to leverage their community-loved, easily recognizeable assets and public support.
-- [React.js](https://reactjs.org/)
+- [Nouns](https://nouns.wtf), to leverage their community-loved, easily recognizable assets and public support.
+- [React.js](https://reactjs.org/), for building a dynamic, responsive user interface that enhances the user experience across web and mobile platforms, ensuring seamless interaction with our decentralized application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -29,7 +32,7 @@ m3mento is built for MiniPay using Celo Composer and the following front-end fra
 
 ## Value Proposition & Purpose
 
-The easiest way to start with Celo Composer is using `@celo/celo-composer`. This CLI tool lets you quickly start building dApps on Celo for multiple frameworks, including React (with either react-celo or rainbowkit-celo), React Native (w/o Expo), Flutter, and Angular. To get started, just run the following command, and follow the steps:
+Building a digital, consumer-focused economy that's inclusive, facilitating easy access to feminine health products and beyond. Kindness and generosity are just a click away.
 
 <!-- ROADMAP -->
 
