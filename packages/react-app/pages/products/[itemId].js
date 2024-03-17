@@ -130,8 +130,9 @@ export default function ProductDetails() {
       </p>
 
       {/* Render other details of the product */}
-      <button className="btn btn-small"
+      <button
         onClick={() => handleButtonClick(product.id, product.name)}
+        className={`bg-blue-500 text-white px-4 py-2 rounded ${isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600'}`}
       >
          {isLoading ? 'Generating...' : 'Generate Payment Link'}
         Create Payment Link
@@ -139,7 +140,7 @@ export default function ProductDetails() {
       {paymentLink && !isLoading && (
         <div>
           <p>Payment Link:</p>
-          <a href={paymentLink} target="_blank" rel="noopener noreferrer">{paymentLink}</a>
+          <a href={paymentLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">{paymentLink}</a>
         </div>
       )}
     </div>
