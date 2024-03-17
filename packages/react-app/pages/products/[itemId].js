@@ -71,6 +71,7 @@ export default function ProductDetails() {
         allowedChains: [
           { isPreferred: false, chainId: 80001 },
           { isPreferred: false, chainId: 5 },
+          { isPreferred: false, chainId: 1 },
         ],
         productId: productId,
         allowPromotionCodes: false,

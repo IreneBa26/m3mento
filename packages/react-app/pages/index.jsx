@@ -63,16 +63,6 @@ export default function Home() {
   // }
   /* The `useEffect` hook in the provided code snippet is making an HTTP GET request to fetch products
   data from the specified API endpoint. Here's a breakdown of what it's doing: */
-  // useEffect(() => {
-  //   const options = {
-  //     method: "GET",
-  //     url: "https://api.copperx.dev/api/v1/products",
-  //     headers: {
-  //       accept: "application/json",
-  //       authorization:
-  //         "Bearer pav1_QKCutuiqdIZ4HnehWIuereXSLyTdz7KG1yyr3gsShk8sy7veFOEtobc5vt9fBH65",
-  //     },
-  //   };
 
   //   axios
   //     .request(options)

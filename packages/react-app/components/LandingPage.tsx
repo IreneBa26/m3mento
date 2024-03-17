@@ -10,6 +10,7 @@ export default function LandingPage() {
   const [data, setData]: Array<any> = useState([]);
   const [shopItems, setShopItems]: Array<any> = useState([])
   const router = useRouter();
+  const API_AUTH_TOKEN = process.env.HACK_KEY;
 
     // TODO: add to when adding an item to the basket, substrackt if removing an item
   // TODO: move basket ot page, create as background and add number counder inside with a red round background
@@ -49,7 +50,7 @@ export default function LandingPage() {
             headers: {
               accept: "application/json",
               authorization:
-                "Bearer pav1_QKCutuiqdIZ4HnehWIuereXSLyTdz7KG1yyr3gsShk8sy7veFOEtobc5vt9fBH65",
+              `Bearer ${API_AUTH_TOKEN}`,
             },
           }
         );
